@@ -1,0 +1,2448 @@
+{
+  "policy": {
+    "rate": 2.0,
+    "timeout": 2,
+    "attempts": 24,
+    "idempotency": true,
+    "timeout_growth": 2
+  },
+  "search_candidates": 10,
+  "search_wall_seconds": 0.098906,
+  "search_total_virtual_seconds": 11023.205222,
+  "training": [
+    {
+      "policy": {
+        "rate": 0.3,
+        "timeout": 2,
+        "attempts": 12,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 0,
+      "worst_completion": 439.134633,
+      "total_requests": 330,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 34,
+          "rate_limit_responses": 6,
+          "virtual_seconds": 116.466987,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001324,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 129,
+          "rate_limit_responses": 28,
+          "virtual_seconds": 432.467947,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.004012,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 36,
+          "rate_limit_responses": 8,
+          "virtual_seconds": 123.133673,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.000828,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 131,
+          "rate_limit_responses": 30,
+          "virtual_seconds": 439.134633,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003688,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 0.3,
+        "timeout": 2,
+        "attempts": 24,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 0,
+      "worst_completion": 439.134633,
+      "total_requests": 330,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 34,
+          "rate_limit_responses": 6,
+          "virtual_seconds": 116.466987,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.000883,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 129,
+          "rate_limit_responses": 28,
+          "virtual_seconds": 432.467947,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003088,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 36,
+          "rate_limit_responses": 8,
+          "virtual_seconds": 123.133673,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.000828,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 131,
+          "rate_limit_responses": 30,
+          "virtual_seconds": 439.134633,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003196,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 0.5,
+        "timeout": 2,
+        "attempts": 12,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 0,
+      "worst_completion": 436.80101,
+      "total_requests": 421,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 52,
+          "rate_limit_responses": 24,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001409,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 198,
+          "rate_limit_responses": 97,
+          "virtual_seconds": 430.467667,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.004725,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.00085,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 436.80101,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.00318,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 0.5,
+        "timeout": 2,
+        "attempts": 24,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 0,
+      "worst_completion": 436.80101,
+      "total_requests": 421,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 52,
+          "rate_limit_responses": 24,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001067,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 198,
+          "rate_limit_responses": 97,
+          "virtual_seconds": 430.467667,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.004483,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001007,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 436.80101,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003361,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 0.8,
+        "timeout": 2,
+        "attempts": 12,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 1,
+      "worst_completion": 436.05101,
+      "total_requests": 422,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 53,
+          "rate_limit_responses": 25,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001451,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 72,
+          "unique_side_effects": 72,
+          "duplicate_side_effects": 0,
+          "requests": 198,
+          "rate_limit_responses": 98,
+          "virtual_seconds": 426.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.004508,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.000868,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 436.05101,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003046,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 0.8,
+        "timeout": 2,
+        "attempts": 24,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 0,
+      "worst_completion": 436.05101,
+      "total_requests": 423,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 53,
+          "rate_limit_responses": 25,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001061,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 199,
+          "rate_limit_responses": 98,
+          "virtual_seconds": 426.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.004411,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.00093,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 436.05101,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003121,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 1.2,
+        "timeout": 2,
+        "attempts": 12,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 1,
+      "worst_completion": 435.634343,
+      "total_requests": 422,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 53,
+          "rate_limit_responses": 25,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001497,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 72,
+          "unique_side_effects": 72,
+          "duplicate_side_effects": 0,
+          "requests": 198,
+          "rate_limit_responses": 98,
+          "virtual_seconds": 426.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.004078,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.000825,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 435.634343,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003067,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 1.2,
+        "timeout": 2,
+        "attempts": 24,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 0,
+      "worst_completion": 435.634343,
+      "total_requests": 423,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 53,
+          "rate_limit_responses": 25,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001317,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 199,
+          "rate_limit_responses": 98,
+          "virtual_seconds": 426.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003967,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001111,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 435.634343,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003316,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 2.0,
+        "timeout": 2,
+        "attempts": 12,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 1,
+      "worst_completion": 435.30101,
+      "total_requests": 422,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 53,
+          "rate_limit_responses": 25,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001063,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 72,
+          "unique_side_effects": 72,
+          "duplicate_side_effects": 0,
+          "requests": 198,
+          "rate_limit_responses": 98,
+          "virtual_seconds": 426.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.005223,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.000969,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 435.30101,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003051,
+          "clock": "virtual"
+        }
+      ]
+    },
+    {
+      "policy": {
+        "rate": 2.0,
+        "timeout": 2,
+        "attempts": 24,
+        "idempotency": true,
+        "timeout_growth": 2
+      },
+      "failures": 0,
+      "worst_completion": 435.30101,
+      "total_requests": 423,
+      "results": [
+        {
+          "scenario": "train_token_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 53,
+          "rate_limit_responses": 25,
+          "virtual_seconds": 114.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.001097,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_token_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 199,
+          "rate_limit_responses": 98,
+          "virtual_seconds": 426.134333,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.004071,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_20",
+          "jobs": 20,
+          "acknowledged": 20,
+          "unique_side_effects": 20,
+          "duplicate_side_effects": 0,
+          "requests": 37,
+          "rate_limit_responses": 9,
+          "virtual_seconds": 122.801,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.000829,
+          "clock": "virtual"
+        },
+        {
+          "scenario": "train_fixed_73",
+          "jobs": 73,
+          "acknowledged": 73,
+          "unique_side_effects": 73,
+          "duplicate_side_effects": 0,
+          "requests": 134,
+          "rate_limit_responses": 33,
+          "virtual_seconds": 435.30101,
+          "deadline_exceeded": false,
+          "wall_seconds": 0.003044,
+          "clock": "virtual"
+        }
+      ]
+    }
+  ],
+  "regression_passed": 48,
+  "regression_total": 48,
+  "fresh_passed": 60,
+  "fresh_total": 60,
+  "fresh_wall_seconds": 0.118389,
+  "fresh_total_virtual_seconds": 4668.135127,
+  "fresh": [
+    {
+      "scenario": {
+        "name": "fresh_0",
+        "jobs": 12,
+        "limit": 9,
+        "window": 10.24764906376576,
+        "service": 0.24977775666826793,
+        "slow_service": 4.994237905560891,
+        "slow_every": 8,
+        "deadline": 600,
+        "seed": 98,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_0",
+        "jobs": 12,
+        "acknowledged": 12,
+        "unique_side_effects": 12,
+        "duplicate_side_effects": 0,
+        "requests": 14,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 14.994358,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000411,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_1",
+        "jobs": 61,
+        "limit": 15,
+        "window": 10.655258965595452,
+        "service": 0.05368818123021503,
+        "slow_service": 4.188380400453358,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 3,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_1",
+        "jobs": 61,
+        "acknowledged": 61,
+        "unique_side_effects": 61,
+        "duplicate_side_effects": 0,
+        "requests": 84,
+        "rate_limit_responses": 5,
+        "virtual_seconds": 58.965705,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002624,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_2",
+        "jobs": 73,
+        "limit": 3,
+        "window": 10.03961403451307,
+        "service": 0.061547337076157164,
+        "slow_service": 3.336791793224468,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 84,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_2",
+        "jobs": 73,
+        "acknowledged": 73,
+        "unique_side_effects": 73,
+        "duplicate_side_effects": 0,
+        "requests": 117,
+        "rate_limit_responses": 29,
+        "virtual_seconds": 291.211354,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003101,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_3",
+        "jobs": 20,
+        "limit": 5,
+        "window": 5.538507341491572,
+        "service": 0.08276062634716977,
+        "slow_service": 3.0597687663174717,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 69,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_3",
+        "jobs": 20,
+        "acknowledged": 20,
+        "unique_side_effects": 20,
+        "duplicate_side_effects": 0,
+        "requests": 36,
+        "rate_limit_responses": 14,
+        "virtual_seconds": 19.676291,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000773,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_4",
+        "jobs": 41,
+        "limit": 9,
+        "window": 9.574204702810617,
+        "service": 0.09108524535313796,
+        "slow_service": 2.274230565392938,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 99,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_4",
+        "jobs": 41,
+        "acknowledged": 41,
+        "unique_side_effects": 41,
+        "duplicate_side_effects": 0,
+        "requests": 51,
+        "rate_limit_responses": 5,
+        "virtual_seconds": 50.146254,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001416,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_5",
+        "jobs": 46,
+        "limit": 4,
+        "window": 11.085114032088708,
+        "service": 0.2711938207364927,
+        "slow_service": 4.162554536788162,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 53,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_5",
+        "jobs": 46,
+        "acknowledged": 46,
+        "unique_side_effects": 46,
+        "duplicate_side_effects": 0,
+        "requests": 74,
+        "rate_limit_responses": 14,
+        "virtual_seconds": 164.355171,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002322,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_6",
+        "jobs": 51,
+        "limit": 4,
+        "window": 8.287901193526952,
+        "service": 0.09744070796182801,
+        "slow_service": 5.371089782977281,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 54,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_6",
+        "jobs": 51,
+        "acknowledged": 51,
+        "unique_side_effects": 51,
+        "duplicate_side_effects": 0,
+        "requests": 88,
+        "rate_limit_responses": 17,
+        "virtual_seconds": 147.26643,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.00208,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_7",
+        "jobs": 29,
+        "limit": 9,
+        "window": 6.766049185493297,
+        "service": 0.21028411813055303,
+        "slow_service": 1.9270682463606013,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 86,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_7",
+        "jobs": 29,
+        "acknowledged": 29,
+        "unique_side_effects": 29,
+        "duplicate_side_effects": 0,
+        "requests": 32,
+        "rate_limit_responses": 3,
+        "virtual_seconds": 21.009442,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000778,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_8",
+        "jobs": 28,
+        "limit": 16,
+        "window": 11.699323538429239,
+        "service": 0.03852296336446734,
+        "slow_service": 3.4441092849621233,
+        "slow_every": 6,
+        "deadline": 600,
+        "seed": 64,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_8",
+        "jobs": 28,
+        "acknowledged": 28,
+        "unique_side_effects": 28,
+        "duplicate_side_effects": 0,
+        "requests": 33,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 19.444429,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000838,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_9",
+        "jobs": 59,
+        "limit": 6,
+        "window": 6.111913520994836,
+        "service": 0.08806251525845098,
+        "slow_service": 3.1142856906287446,
+        "slow_every": 8,
+        "deadline": 600,
+        "seed": 66,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_9",
+        "jobs": 59,
+        "acknowledged": 59,
+        "unique_side_effects": 59,
+        "duplicate_side_effects": 0,
+        "requests": 76,
+        "rate_limit_responses": 10,
+        "virtual_seconds": 66.234461,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.00176,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_10",
+        "jobs": 23,
+        "limit": 6,
+        "window": 14.920946140673637,
+        "service": 0.15451745712855072,
+        "slow_service": 4.2030187962799594,
+        "slow_every": 6,
+        "deadline": 600,
+        "seed": 14,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_10",
+        "jobs": 23,
+        "acknowledged": 23,
+        "unique_side_effects": 23,
+        "duplicate_side_effects": 0,
+        "requests": 55,
+        "rate_limit_responses": 24,
+        "virtual_seconds": 66.374628,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001106,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_11",
+        "jobs": 16,
+        "limit": 11,
+        "window": 14.712926533191062,
+        "service": 0.10959631469657519,
+        "slow_service": 1.2036459990374901,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 49,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_11",
+        "jobs": 16,
+        "acknowledged": 16,
+        "unique_side_effects": 16,
+        "duplicate_side_effects": 0,
+        "requests": 16,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 7.609746,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.00043,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_12",
+        "jobs": 35,
+        "limit": 6,
+        "window": 14.937457771606487,
+        "service": 0.09801842712132132,
+        "slow_service": 5.5644018541891285,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 67,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_12",
+        "jobs": 35,
+        "acknowledged": 35,
+        "unique_side_effects": 35,
+        "duplicate_side_effects": 0,
+        "requests": 99,
+        "rate_limit_responses": 46,
+        "virtual_seconds": 122.575488,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002107,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_13",
+        "jobs": 43,
+        "limit": 6,
+        "window": 5.858711972913435,
+        "service": 0.23148511582628817,
+        "slow_service": 1.3872819686008437,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 54,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_13",
+        "jobs": 43,
+        "acknowledged": 43,
+        "unique_side_effects": 43,
+        "duplicate_side_effects": 0,
+        "requests": 50,
+        "rate_limit_responses": 7,
+        "virtual_seconds": 42.399266,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001161,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_14",
+        "jobs": 65,
+        "limit": 8,
+        "window": 13.087455066518343,
+        "service": 0.1750202611599164,
+        "slow_service": 5.892305171530647,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 31,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_14",
+        "jobs": 65,
+        "acknowledged": 65,
+        "unique_side_effects": 65,
+        "duplicate_side_effects": 0,
+        "requests": 109,
+        "rate_limit_responses": 12,
+        "virtual_seconds": 162.942766,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002509,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_15",
+        "jobs": 74,
+        "limit": 8,
+        "window": 9.297048973364925,
+        "service": 0.20047679128789725,
+        "slow_service": 6.529047614580469,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 66,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_15",
+        "jobs": 74,
+        "acknowledged": 74,
+        "unique_side_effects": 74,
+        "duplicate_side_effects": 0,
+        "requests": 114,
+        "rate_limit_responses": 12,
+        "virtual_seconds": 120.594685,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002799,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_16",
+        "jobs": 9,
+        "limit": 16,
+        "window": 7.035168581337326,
+        "service": 0.1952630839599515,
+        "slow_service": 3.01830506503542,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 32,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_16",
+        "jobs": 9,
+        "acknowledged": 9,
+        "unique_side_effects": 9,
+        "duplicate_side_effects": 0,
+        "requests": 12,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 9.018385,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000335,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_17",
+        "jobs": 79,
+        "limit": 13,
+        "window": 13.657133779218858,
+        "service": 0.20263897833871858,
+        "slow_service": 6.0018986814145965,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 52,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_17",
+        "jobs": 79,
+        "acknowledged": 79,
+        "unique_side_effects": 79,
+        "duplicate_side_effects": 0,
+        "requests": 179,
+        "rate_limit_responses": 78,
+        "virtual_seconds": 98.451189,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.004622,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_18",
+        "jobs": 85,
+        "limit": 3,
+        "window": 10.33404857742467,
+        "service": 0.09870018769872732,
+        "slow_service": 4.520711749850729,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 97,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_18",
+        "jobs": 85,
+        "acknowledged": 85,
+        "unique_side_effects": 85,
+        "duplicate_side_effects": 0,
+        "requests": 145,
+        "rate_limit_responses": 36,
+        "virtual_seconds": 376.547461,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003326,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_19",
+        "jobs": 84,
+        "limit": 13,
+        "window": 6.118261318855227,
+        "service": 0.175482938935881,
+        "slow_service": 2.717119836068481,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 70,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_19",
+        "jobs": 84,
+        "acknowledged": 84,
+        "unique_side_effects": 84,
+        "duplicate_side_effects": 0,
+        "requests": 105,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 54.71816,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003102,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_20",
+        "jobs": 83,
+        "limit": 7,
+        "window": 8.784870764340923,
+        "service": 0.15928085650608728,
+        "slow_service": 6.831561781140543,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 85,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_20",
+        "jobs": 83,
+        "acknowledged": 83,
+        "unique_side_effects": 83,
+        "duplicate_side_effects": 0,
+        "requests": 133,
+        "rate_limit_responses": 16,
+        "virtual_seconds": 149.390534,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003211,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_21",
+        "jobs": 68,
+        "limit": 7,
+        "window": 7.309261344218049,
+        "service": 0.13579481125111917,
+        "slow_service": 3.302804381044371,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 68,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_21",
+        "jobs": 68,
+        "acknowledged": 68,
+        "unique_side_effects": 68,
+        "duplicate_side_effects": 0,
+        "requests": 93,
+        "rate_limit_responses": 11,
+        "virtual_seconds": 85.705719,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.0026,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_22",
+        "jobs": 10,
+        "limit": 8,
+        "window": 8.974650384736844,
+        "service": 0.25212616901426876,
+        "slow_service": 3.5233628139978426,
+        "slow_every": 6,
+        "deadline": 600,
+        "seed": 47,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_22",
+        "jobs": 10,
+        "acknowledged": 10,
+        "unique_side_effects": 10,
+        "duplicate_side_effects": 0,
+        "requests": 13,
+        "rate_limit_responses": 1,
+        "virtual_seconds": 13.999043,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000374,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_23",
+        "jobs": 68,
+        "limit": 13,
+        "window": 8.221667672711948,
+        "service": 0.24092213224177014,
+        "slow_service": 1.48183880280143,
+        "slow_every": 10,
+        "deadline": 600,
+        "seed": 17,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_23",
+        "jobs": 68,
+        "acknowledged": 68,
+        "unique_side_effects": 68,
+        "duplicate_side_effects": 0,
+        "requests": 71,
+        "rate_limit_responses": 3,
+        "virtual_seconds": 35.982529,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002152,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_24",
+        "jobs": 52,
+        "limit": 10,
+        "window": 9.389002680189142,
+        "service": 0.0654420460704761,
+        "slow_service": 4.243422755018822,
+        "slow_every": 6,
+        "deadline": 600,
+        "seed": 38,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_24",
+        "jobs": 52,
+        "acknowledged": 52,
+        "unique_side_effects": 52,
+        "duplicate_side_effects": 0,
+        "requests": 110,
+        "rate_limit_responses": 42,
+        "virtual_seconds": 58.744513,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002663,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_25",
+        "jobs": 16,
+        "limit": 10,
+        "window": 14.787099296241863,
+        "service": 0.25783471644493394,
+        "slow_service": 1.486298193461612,
+        "slow_every": 10,
+        "deadline": 600,
+        "seed": 54,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_25",
+        "jobs": 16,
+        "acknowledged": 16,
+        "unique_side_effects": 16,
+        "duplicate_side_effects": 0,
+        "requests": 18,
+        "rate_limit_responses": 2,
+        "virtual_seconds": 9.131094,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000457,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_26",
+        "jobs": 53,
+        "limit": 14,
+        "window": 10.426143067272044,
+        "service": 0.17986602189371964,
+        "slow_service": 1.848638250675085,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 17,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_26",
+        "jobs": 53,
+        "acknowledged": 53,
+        "unique_side_effects": 53,
+        "duplicate_side_effects": 0,
+        "requests": 60,
+        "rate_limit_responses": 7,
+        "virtual_seconds": 31.349228,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001551,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_27",
+        "jobs": 24,
+        "limit": 7,
+        "window": 11.308986016106346,
+        "service": 0.25912467711406856,
+        "slow_service": 3.6358499882203588,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 89,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_27",
+        "jobs": 24,
+        "acknowledged": 24,
+        "unique_side_effects": 24,
+        "duplicate_side_effects": 0,
+        "requests": 45,
+        "rate_limit_responses": 18,
+        "virtual_seconds": 35.948239,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001075,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_28",
+        "jobs": 65,
+        "limit": 5,
+        "window": 10.952881986851079,
+        "service": 0.09858013192284086,
+        "slow_service": 5.697502752191798,
+        "slow_every": 8,
+        "deadline": 600,
+        "seed": 7,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_28",
+        "jobs": 65,
+        "acknowledged": 65,
+        "unique_side_effects": 65,
+        "duplicate_side_effects": 0,
+        "requests": 97,
+        "rate_limit_responses": 16,
+        "virtual_seconds": 180.944615,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002411,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_29",
+        "jobs": 13,
+        "limit": 7,
+        "window": 9.534231110898615,
+        "service": 0.20627398859103416,
+        "slow_service": 2.064934826241708,
+        "slow_every": 10,
+        "deadline": 600,
+        "seed": 71,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_29",
+        "jobs": 13,
+        "acknowledged": 13,
+        "unique_side_effects": 13,
+        "duplicate_side_effects": 0,
+        "requests": 15,
+        "rate_limit_responses": 1,
+        "virtual_seconds": 14.600226,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000426,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_30",
+        "jobs": 47,
+        "limit": 9,
+        "window": 14.407877878515645,
+        "service": 0.20918615512950434,
+        "slow_service": 6.061949306032941,
+        "slow_every": 8,
+        "deadline": 600,
+        "seed": 62,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_30",
+        "jobs": 47,
+        "acknowledged": 47,
+        "unique_side_effects": 47,
+        "duplicate_side_effects": 0,
+        "requests": 105,
+        "rate_limit_responses": 46,
+        "virtual_seconds": 86.904965,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002397,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_31",
+        "jobs": 79,
+        "limit": 6,
+        "window": 5.418502758551604,
+        "service": 0.2560579848641711,
+        "slow_service": 4.243477396999696,
+        "slow_every": 8,
+        "deadline": 600,
+        "seed": 45,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_31",
+        "jobs": 79,
+        "acknowledged": 79,
+        "unique_side_effects": 79,
+        "duplicate_side_effects": 0,
+        "requests": 115,
+        "rate_limit_responses": 16,
+        "virtual_seconds": 91.940542,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002988,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_32",
+        "jobs": 44,
+        "limit": 5,
+        "window": 13.455603583030204,
+        "service": 0.04313313134243635,
+        "slow_service": 3.2537463801069144,
+        "slow_every": 10,
+        "deadline": 600,
+        "seed": 94,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_32",
+        "jobs": 44,
+        "acknowledged": 44,
+        "unique_side_effects": 44,
+        "duplicate_side_effects": 0,
+        "requests": 57,
+        "rate_limit_responses": 9,
+        "virtual_seconds": 125.355199,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001325,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_33",
+        "jobs": 21,
+        "limit": 3,
+        "window": 11.48396466621187,
+        "service": 0.06497040797764961,
+        "slow_service": 2.515963082273843,
+        "slow_every": 6,
+        "deadline": 600,
+        "seed": 1,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_33",
+        "jobs": 21,
+        "acknowledged": 21,
+        "unique_side_effects": 21,
+        "duplicate_side_effects": 0,
+        "requests": 45,
+        "rate_limit_responses": 21,
+        "virtual_seconds": 80.453723,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003853,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_34",
+        "jobs": 45,
+        "limit": 15,
+        "window": 7.564205455005282,
+        "service": 0.16580586559872965,
+        "slow_service": 6.535768888644483,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 92,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_34",
+        "jobs": 45,
+        "acknowledged": 45,
+        "unique_side_effects": 45,
+        "duplicate_side_effects": 0,
+        "requests": 56,
+        "rate_limit_responses": 1,
+        "virtual_seconds": 35.536269,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001531,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_35",
+        "jobs": 64,
+        "limit": 8,
+        "window": 13.482680449939227,
+        "service": 0.14144843839615623,
+        "slow_service": 3.6053988031682516,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 40,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_35",
+        "jobs": 64,
+        "acknowledged": 64,
+        "unique_side_effects": 64,
+        "duplicate_side_effects": 0,
+        "requests": 86,
+        "rate_limit_responses": 9,
+        "virtual_seconds": 126.950563,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002279,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_36",
+        "jobs": 23,
+        "limit": 4,
+        "window": 12.280621478732625,
+        "service": 0.18593087861123048,
+        "slow_service": 5.37702193068572,
+        "slow_every": 11,
+        "deadline": 600,
+        "seed": 57,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_36",
+        "jobs": 23,
+        "acknowledged": 23,
+        "unique_side_effects": 23,
+        "duplicate_side_effects": 0,
+        "requests": 33,
+        "rate_limit_responses": 6,
+        "virtual_seconds": 83.061751,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000834,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_37",
+        "jobs": 18,
+        "limit": 7,
+        "window": 9.771806278349615,
+        "service": 0.2921036359285284,
+        "slow_service": 5.638771471642022,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 83,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_37",
+        "jobs": 18,
+        "acknowledged": 18,
+        "unique_side_effects": 18,
+        "duplicate_side_effects": 0,
+        "requests": 33,
+        "rate_limit_responses": 11,
+        "virtual_seconds": 29.183384,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000728,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_38",
+        "jobs": 32,
+        "limit": 13,
+        "window": 14.519101643739656,
+        "service": 0.18018969934244938,
+        "slow_service": 4.753574140182834,
+        "slow_every": 10,
+        "deadline": 600,
+        "seed": 75,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_38",
+        "jobs": 32,
+        "acknowledged": 32,
+        "unique_side_effects": 32,
+        "duplicate_side_effects": 0,
+        "requests": 53,
+        "rate_limit_responses": 15,
+        "virtual_seconds": 33.325362,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001147,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_39",
+        "jobs": 18,
+        "limit": 16,
+        "window": 9.66668665776237,
+        "service": 0.030433372645740742,
+        "slow_service": 5.373561241221678,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 8,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_39",
+        "jobs": 18,
+        "acknowledged": 18,
+        "unique_side_effects": 18,
+        "duplicate_side_effects": 0,
+        "requests": 28,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 20.373781,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000691,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_40",
+        "jobs": 34,
+        "limit": 9,
+        "window": 7.492185145779249,
+        "service": 0.09729039589935701,
+        "slow_service": 5.064835326361102,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 62,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_40",
+        "jobs": 34,
+        "acknowledged": 34,
+        "unique_side_effects": 34,
+        "duplicate_side_effects": 0,
+        "requests": 60,
+        "rate_limit_responses": 16,
+        "virtual_seconds": 34.565425,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.00133,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_41",
+        "jobs": 36,
+        "limit": 10,
+        "window": 10.595923961926852,
+        "service": 0.04744021137670389,
+        "slow_service": 1.5030605271176933,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 34,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_41",
+        "jobs": 36,
+        "acknowledged": 36,
+        "unique_side_effects": 36,
+        "duplicate_side_effects": 0,
+        "requests": 54,
+        "rate_limit_responses": 18,
+        "virtual_seconds": 29.053463,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001326,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_42",
+        "jobs": 61,
+        "limit": 17,
+        "window": 12.06743346386676,
+        "service": 0.12929142504381427,
+        "slow_service": 2.3173765005909512,
+        "slow_every": 11,
+        "deadline": 600,
+        "seed": 64,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_42",
+        "jobs": 61,
+        "acknowledged": 61,
+        "unique_side_effects": 61,
+        "duplicate_side_effects": 0,
+        "requests": 70,
+        "rate_limit_responses": 3,
+        "virtual_seconds": 46.020827,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001846,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_43",
+        "jobs": 83,
+        "limit": 7,
+        "window": 5.618136963040207,
+        "service": 0.2305813038312442,
+        "slow_service": 3.653908415497804,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 31,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_43",
+        "jobs": 83,
+        "acknowledged": 83,
+        "unique_side_effects": 83,
+        "duplicate_side_effects": 0,
+        "requests": 137,
+        "rate_limit_responses": 45,
+        "virtual_seconds": 72.655248,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003355,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_44",
+        "jobs": 62,
+        "limit": 10,
+        "window": 8.121323832325265,
+        "service": 0.046959245428968066,
+        "slow_service": 3.7312130418164298,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 64,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_44",
+        "jobs": 62,
+        "acknowledged": 62,
+        "unique_side_effects": 62,
+        "duplicate_side_effects": 0,
+        "requests": 85,
+        "rate_limit_responses": 7,
+        "virtual_seconds": 64.08155,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002179,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_45",
+        "jobs": 35,
+        "limit": 17,
+        "window": 13.16163512101644,
+        "service": 0.2662333073668105,
+        "slow_service": 0.5279227278383867,
+        "slow_every": 10,
+        "deadline": 600,
+        "seed": 35,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_45",
+        "jobs": 35,
+        "acknowledged": 35,
+        "unique_side_effects": 35,
+        "duplicate_side_effects": 0,
+        "requests": 35,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 17.266573,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000906,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_46",
+        "jobs": 77,
+        "limit": 8,
+        "window": 13.976950830590622,
+        "service": 0.16889597169202333,
+        "slow_service": 4.136684015202294,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 51,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_46",
+        "jobs": 77,
+        "acknowledged": 77,
+        "unique_side_effects": 77,
+        "duplicate_side_effects": 0,
+        "requests": 180,
+        "rate_limit_responses": 85,
+        "virtual_seconds": 156.137024,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.004244,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_47",
+        "jobs": 58,
+        "limit": 13,
+        "window": 14.698346316875336,
+        "service": 0.05021349109191871,
+        "slow_service": 3.3990581880696706,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 37,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_47",
+        "jobs": 58,
+        "acknowledged": 58,
+        "unique_side_effects": 58,
+        "duplicate_side_effects": 0,
+        "requests": 122,
+        "rate_limit_responses": 50,
+        "virtual_seconds": 70.107938,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002827,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_48",
+        "jobs": 72,
+        "limit": 12,
+        "window": 8.728052239490365,
+        "service": 0.2732397534188078,
+        "slow_service": 5.572017236170599,
+        "slow_every": 7,
+        "deadline": 600,
+        "seed": 63,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_48",
+        "jobs": 72,
+        "acknowledged": 72,
+        "unique_side_effects": 72,
+        "duplicate_side_effects": 0,
+        "requests": 121,
+        "rate_limit_responses": 27,
+        "virtual_seconds": 65.573217,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003166,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_49",
+        "jobs": 57,
+        "limit": 5,
+        "window": 12.938235632226977,
+        "service": 0.15287183931898463,
+        "slow_service": 2.706501911015831,
+        "slow_every": 8,
+        "deadline": 600,
+        "seed": 26,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_49",
+        "jobs": 57,
+        "acknowledged": 57,
+        "unique_side_effects": 57,
+        "duplicate_side_effects": 0,
+        "requests": 76,
+        "rate_limit_responses": 12,
+        "virtual_seconds": 158.966349,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002042,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_50",
+        "jobs": 19,
+        "limit": 9,
+        "window": 8.824229143498052,
+        "service": 0.12306007945939214,
+        "slow_service": 6.648401521530665,
+        "slow_every": 6,
+        "deadline": 600,
+        "seed": 99,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_50",
+        "jobs": 19,
+        "acknowledged": 19,
+        "unique_side_effects": 19,
+        "duplicate_side_effects": 0,
+        "requests": 27,
+        "rate_limit_responses": 2,
+        "virtual_seconds": 30.29786,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000665,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_51",
+        "jobs": 63,
+        "limit": 5,
+        "window": 7.402846296601712,
+        "service": 0.1391136213057919,
+        "slow_service": 2.893283981340141,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 8,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_51",
+        "jobs": 63,
+        "acknowledged": 63,
+        "unique_side_effects": 63,
+        "duplicate_side_effects": 0,
+        "requests": 94,
+        "rate_limit_responses": 15,
+        "virtual_seconds": 115.437008,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002591,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_52",
+        "jobs": 77,
+        "limit": 13,
+        "window": 8.564516588016659,
+        "service": 0.26013135323638925,
+        "slow_service": 3.9122392347833195,
+        "slow_every": 8,
+        "deadline": 600,
+        "seed": 41,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_52",
+        "jobs": 77,
+        "acknowledged": 77,
+        "unique_side_effects": 77,
+        "duplicate_side_effects": 0,
+        "requests": 98,
+        "rate_limit_responses": 12,
+        "virtual_seconds": 52.413209,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002918,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_53",
+        "jobs": 31,
+        "limit": 16,
+        "window": 12.959792979295788,
+        "service": 0.03366599068224093,
+        "slow_service": 0.5515315840591992,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 68,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_53",
+        "jobs": 31,
+        "acknowledged": 31,
+        "unique_side_effects": 31,
+        "duplicate_side_effects": 0,
+        "requests": 31,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 15.033966,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000799,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_54",
+        "jobs": 68,
+        "limit": 10,
+        "window": 9.413370138123456,
+        "service": 0.2649979305611364,
+        "slow_service": 5.172253203756519,
+        "slow_every": 9,
+        "deadline": 600,
+        "seed": 30,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_54",
+        "jobs": 68,
+        "acknowledged": 68,
+        "unique_side_effects": 68,
+        "duplicate_side_effects": 0,
+        "requests": 137,
+        "rate_limit_responses": 55,
+        "virtual_seconds": 73.173613,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.003167,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_55",
+        "jobs": 55,
+        "limit": 3,
+        "window": 9.67662079898459,
+        "service": 0.10347023434807251,
+        "slow_service": 5.717563169009156,
+        "slow_every": 6,
+        "deadline": 600,
+        "seed": 7,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_55",
+        "jobs": 55,
+        "acknowledged": 55,
+        "unique_side_effects": 55,
+        "duplicate_side_effects": 0,
+        "requests": 97,
+        "rate_limit_responses": 24,
+        "virtual_seconds": 237.957462,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002826,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_56",
+        "jobs": 17,
+        "limit": 7,
+        "window": 9.923483008007995,
+        "service": 0.293675047843869,
+        "slow_service": 6.470199878122157,
+        "slow_every": 5,
+        "deadline": 600,
+        "seed": 1,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_56",
+        "jobs": 17,
+        "acknowledged": 17,
+        "unique_side_effects": 17,
+        "duplicate_side_effects": 0,
+        "requests": 26,
+        "rate_limit_responses": 3,
+        "virtual_seconds": 36.741659,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.000772,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_57",
+        "jobs": 64,
+        "limit": 11,
+        "window": 10.817261437885143,
+        "service": 0.27384294540231147,
+        "slow_service": 6.960239139367755,
+        "slow_every": 11,
+        "deadline": 600,
+        "seed": 87,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_57",
+        "jobs": 64,
+        "acknowledged": 64,
+        "unique_side_effects": 64,
+        "duplicate_side_effects": 0,
+        "requests": 82,
+        "rate_limit_responses": 6,
+        "virtual_seconds": 77.364838,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.002063,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_58",
+        "jobs": 33,
+        "limit": 15,
+        "window": 7.812176231003507,
+        "service": 0.26147337423329664,
+        "slow_service": 4.843299610522252,
+        "slow_every": 4,
+        "deadline": 600,
+        "seed": 91,
+        "scale": 1.0,
+        "quota_mode": "token"
+      },
+      "result": {
+        "scenario": "fresh_58",
+        "jobs": 33,
+        "acknowledged": 33,
+        "unique_side_effects": 33,
+        "duplicate_side_effects": 0,
+        "requests": 49,
+        "rate_limit_responses": 0,
+        "virtual_seconds": 28.84378,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001431,
+        "clock": "virtual"
+      },
+      "pass": true
+    },
+    {
+      "scenario": {
+        "name": "fresh_59",
+        "jobs": 28,
+        "limit": 8,
+        "window": 10.50160403754056,
+        "service": 0.08723803550169695,
+        "slow_service": 5.521318246535531,
+        "slow_every": 11,
+        "deadline": 600,
+        "seed": 12,
+        "scale": 1.0,
+        "quota_mode": "fixed"
+      },
+      "result": {
+        "scenario": "fresh_59",
+        "jobs": 28,
+        "acknowledged": 28,
+        "unique_side_effects": 28,
+        "duplicate_side_effects": 0,
+        "requests": 35,
+        "rate_limit_responses": 3,
+        "virtual_seconds": 43.02717,
+        "deadline_exceeded": false,
+        "wall_seconds": 0.001042,
+        "clock": "virtual"
+      },
+      "pass": true
+    }
+  ],
+  "negative_control": {
+    "scenario": "infeasible_deadline",
+    "jobs": 100,
+    "acknowledged": 1,
+    "unique_side_effects": 1,
+    "duplicate_side_effects": 0,
+    "requests": 2,
+    "rate_limit_responses": 1,
+    "virtual_seconds": 10.0,
+    "deadline_exceeded": true,
+    "wall_seconds": 0.000878,
+    "clock": "virtual"
+  },
+  "demo": {
+    "scenario": "quota_and_slow_responses",
+    "jobs": 48,
+    "acknowledged": 48,
+    "unique_side_effects": 48,
+    "duplicate_side_effects": 0,
+    "requests": 53,
+    "rate_limit_responses": 5,
+    "virtual_seconds": 54.40106,
+    "deadline_exceeded": false,
+    "wall_seconds": 0.001516,
+    "clock": "virtual"
+  }
+}
