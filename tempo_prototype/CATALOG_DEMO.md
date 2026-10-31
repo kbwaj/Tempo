@@ -34,9 +34,9 @@ Main output SHA-256:
 1f7c2a342ea504c865411d04ca600286020d263228e4b612ecfa69efeeac065d
 ```
 
-[Live-model report](../runs/catalog/20261031T190132409388Z/index.html)
-· [Raw measurements](../runs/catalog/20261031T190132409388Z/report.json)
-· [Lower-bound derivation](../runs/catalog/20261031T190132409388Z/optimality.json)
+[Live-model report](../runs/catalog/20261031T191522732159Z/index.html)
+· [Raw measurements](../runs/catalog/20261031T191522732159Z/report.json)
+· [Lower-bound derivation](../runs/catalog/20261031T191522732159Z/optimality.json)
 
 ## Why the request count is provable within this contract
 
@@ -174,4 +174,4 @@ artifact, replay launch, source/evidence routes and JavaScript syntax were
 checked. Automated browser visual inspection remains unverified; the measured
 results come from Python execution and HTTP, not browser animation.
 
-[Rehearsed application replay](../runs/catalog/20261031T190844164773Z/index.html)
+[Rehearsed application replay](../runs/catalog/20261031T191522732159Z/index.html)
