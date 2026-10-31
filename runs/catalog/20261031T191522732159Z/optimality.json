@@ -1,0 +1,335 @@
+{
+  "http_cases": [
+    {
+      "minimum_inventory_requests": 48,
+      "minimum_write_requests": 48,
+      "minimum_enrichment_requests": 12,
+      "minimum_total_requests": 108,
+      "lookup_scopes": [
+        {
+          "kind": "category",
+          "tenant": 0,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 0,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 1,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 1,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 2,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 2,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 0,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 0,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 1,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 1,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 2,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 2,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        }
+      ],
+      "assumptions": [
+        "Cold server/client state for each run",
+        "One item-bound inventory read and one write per output",
+        "Required lookup receipts must be obtained from provider",
+        "Bulk requests contain one kind/tenant/snapshot and at most batch_size keys",
+        "Category and FX are immutable within explicit tenant/snapshot",
+        "One quota unit per request, including a bulk lookup"
+      ],
+      "scope": "Request-count lower bound under the declared API; not a latency-optimality or production claim."
+    },
+    {
+      "minimum_inventory_requests": 72,
+      "minimum_write_requests": 72,
+      "minimum_enrichment_requests": 12,
+      "minimum_total_requests": 156,
+      "lookup_scopes": [
+        {
+          "kind": "category",
+          "tenant": 0,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 0,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 0,
+          "snapshot": "v2",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 1,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 1,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 1,
+          "snapshot": "v2",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 0,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 0,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 0,
+          "snapshot": "v2",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 1,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 1,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 1,
+          "snapshot": "v2",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        }
+      ],
+      "assumptions": [
+        "Cold server/client state for each run",
+        "One item-bound inventory read and one write per output",
+        "Required lookup receipts must be obtained from provider",
+        "Bulk requests contain one kind/tenant/snapshot and at most batch_size keys",
+        "Category and FX are immutable within explicit tenant/snapshot",
+        "One quota unit per request, including a bulk lookup"
+      ],
+      "scope": "Request-count lower bound under the declared API; not a latency-optimality or production claim."
+    },
+    {
+      "minimum_inventory_requests": 64,
+      "minimum_write_requests": 64,
+      "minimum_enrichment_requests": 16,
+      "minimum_total_requests": 144,
+      "lookup_scopes": [
+        {
+          "kind": "category",
+          "tenant": 0,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 0,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 1,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 1,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 2,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 2,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 3,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "category",
+          "tenant": 3,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 0,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 0,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 1,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 1,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 2,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 2,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 3,
+          "snapshot": "v0",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        },
+        {
+          "kind": "fx",
+          "tenant": 3,
+          "snapshot": "v1",
+          "unique_keys": 2,
+          "minimum_requests": 1
+        }
+      ],
+      "assumptions": [
+        "Cold server/client state for each run",
+        "One item-bound inventory read and one write per output",
+        "Required lookup receipts must be obtained from provider",
+        "Bulk requests contain one kind/tenant/snapshot and at most batch_size keys",
+        "Category and FX are immutable within explicit tenant/snapshot",
+        "One quota unit per request, including a bulk lookup"
+      ],
+      "scope": "Request-count lower bound under the declared API; not a latency-optimality or production claim."
+    }
+  ]
+}

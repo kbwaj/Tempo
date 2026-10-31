@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "rationale": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "rationale",
+    "source"
+  ],
+  "additionalProperties": false
+}

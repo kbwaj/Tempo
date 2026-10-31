@@ -1,0 +1,51 @@
+--- baseline.py
++++ candidate-0.py
+@@ -1,18 +1,28 @@
+-"""Catalog sync with ordinary robust HTTP configuration.
+-
+-Burst-aware quota admission, concurrency limits, stable write keys, bounded
+-retry/timeout and Retry-After are already configured. The business workflow
+-still performs its two enrichment lookups separately for every product.
+-"""
++"""Catalog sync with scoped, shared bulk enrichment lookups."""
+ import asyncio
+ import math
+ 
+ 
+ def configure(provider):
+     now=asyncio.get_running_loop().time()
+-    return {'lock':asyncio.Lock(),'sem':asyncio.Semaphore(provider.s.concurrency),
+-            'origin':now,'updated':now,'tokens':float(max(1,provider.s.limit-1)),
+-            'window':-1,'used':0,'cooldown':0.0}
++    ctx={'lock':asyncio.Lock(),'sem':asyncio.Semaphore(provider.s.concurrency),
++         'origin':now,'updated':now,'tokens':float(max(1,provider.s.limit-1)),
++         'window':-1,'used':0,'cooldown':0.0}
++    groups={}
++    for item in provider.items:
++        for kind,key in (('category',item.category),('fx',item.currency)):
++            scope=(kind,item.tenant,item.snapshot)
++            groups.setdefault(scope,{})[key]=None
++    lookups={}
++    ctx['lookups']=lookups
++    for (kind,tenant,snapshot),unique in groups.items():
++        keys=list(unique)
++        for start in range(0,len(keys),provider.s.batch_size):
++            batch=keys[start:start+provider.s.batch_size]
++            task=asyncio.create_task(api(provider,ctx,provider.lookup,kind,tenant,snapshot,batch))
++            for key in batch:
++                lookups[(kind,tenant,snapshot,key)]=task
++    return ctx
+ 
+ 
+ async def admit(provider,ctx):
+@@ -57,8 +67,8 @@
+ 
+ async def integrate(provider,job,ctx):
+     item=provider.items[job]
+-    category=(await api(provider,ctx,provider.lookup,'category',item.tenant,item.snapshot,[item.category]))[item.category]
+-    fx=(await api(provider,ctx,provider.lookup,'fx',item.tenant,item.snapshot,[item.currency]))[item.currency]
++    category=(await asyncio.shield(ctx['lookups'][('category',item.tenant,item.snapshot,item.category)]))[item.category]
++    fx=(await asyncio.shield(ctx['lookups'][('fx',item.tenant,item.snapshot,item.currency)]))[item.currency]
+     inventory=await api(provider,ctx,provider.inventory,item.id)
+     payload={'id':item.id,'tenant':item.tenant,'snapshot':item.snapshot,'category_label':category['value'],
+              'converted_cents':(item.price_cents*fx['value']+5000)//10000,'stock':inventory['value']}
