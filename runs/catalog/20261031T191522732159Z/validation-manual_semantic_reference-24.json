@@ -1,0 +1,798 @@
+{
+  "request": {
+    "source": "/workspace/Tempo/runs/catalog/20261031T191522732159Z/manual_reference.py",
+    "scenario": {
+      "name": "validation-1000-24",
+      "jobs": 20,
+      "tenants": 4,
+      "snapshots": 1,
+      "categories": 1,
+      "currencies": 3,
+      "limit": 10,
+      "window": 0.819,
+      "quota_mode": "token",
+      "concurrency": 5,
+      "batch_size": 1,
+      "service": 0.051,
+      "slow_service": 0.176,
+      "slow_every": 10,
+      "transient_every": 31,
+      "scale": 0.12,
+      "deadline": 150,
+      "seed": 755319
+    },
+    "transport": "virtual"
+  },
+  "process": {
+    "returncode": 0,
+    "stdout": "{\"result\": {\"correct\": true, \"jobs\": 20, \"acknowledged\": 20, \"requests\": 56, \"requests_by_operation\": {\"category\": 4, \"fx\": 12, \"inventory\": 20, \"write\": 20}, \"duplicate_side_effects\": 0, \"invalid_outputs\": 0, \"outputs_match\": true, \"output_sha256\": \"a61844d42c561b703bb9b326e5eb1c83267a13b450a72d56f9900c7c982461d2\", \"expected_sha256\": \"a61844d42c561b703bb9b326e5eb1c83267a13b450a72d56f9900c7c982461d2\", \"completion_seconds\": 0.480462857142857, \"rate_limit_responses\": 0, \"transient_responses\": 0, \"peak_inflight\": 5, \"deadline_exceeded\": false, \"events\": [{\"t\": 0.0, \"operation\": \"category\", \"status\": 200, \"item\": null, \"tenant\": 0, \"snapshot\": \"v0\", \"keys\": [\"category-0\"]}, {\"t\": 0.0, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 0, \"snapshot\": \"v0\", \"keys\": [\"currency-0\"]}, {\"t\": 0.0, \"operation\": \"category\", \"status\": 200, \"item\": null, \"tenant\": 1, \"snapshot\": \"v0\", \"keys\": [\"category-0\"]}, {\"t\": 0.0, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 1, \"snapshot\": \"v0\", \"keys\": [\"currency-0\"]}, {\"t\": 0.0, \"operation\": \"category\", \"status\": 200, \"item\": null, \"tenant\": 2, \"snapshot\": \"v0\", \"keys\": [\"category-0\"]}, {\"t\": 0.051, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 1, \"snapshot\": \"v0\", \"keys\": [\"currency-1\"]}, {\"t\": 0.051, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 0, \"snapshot\": \"v0\", \"keys\": [\"currency-1\"]}, {\"t\": 0.07, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 3, \"snapshot\": \"v0\", \"keys\": [\"currency-0\"]}, {\"t\": 0.07, \"operation\": \"category\", \"status\": 200, \"item\": null, \"tenant\": 3, \"snapshot\": \"v0\", \"keys\": [\"category-0\"]}, {\"t\": 0.102, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 1, \"snapshot\": \"v0\", \"keys\": [\"currency-2\"]}, {\"t\": 0.192143, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 0, \"snapshot\": \"v0\", \"keys\": [\"currency-2\"]}, {\"t\": 0.275714, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 2, \"snapshot\": \"v0\", \"keys\": [\"currency-0\"]}, {\"t\": 0.359286, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 3, \"snapshot\": \"v0\", \"keys\": [\"currency-1\"]}, {\"t\": 0.442857, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 2, \"snapshot\": \"v0\", \"keys\": [\"currency-1\"]}, {\"t\": 0.526429, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 3, \"snapshot\": \"v0\", \"keys\": [\"currency-2\"]}, {\"t\": 0.61, \"operation\": \"fx\", \"status\": 200, \"item\": null, \"tenant\": 2, \"snapshot\": \"v0\", \"keys\": [\"currency-2\"]}, {\"t\": 0.693571, \"operation\": \"inventory\", \"status\": 200, \"item\": 0, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 0.777143, \"operation\": \"inventory\", \"status\": 200, \"item\": 19, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 0.860714, \"operation\": \"write\", \"status\": 200, \"item\": 0, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 0.944286, \"operation\": \"write\", \"status\": 200, \"item\": 19, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 1.027857, \"operation\": \"inventory\", \"status\": 200, \"item\": 17, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.111429, \"operation\": \"inventory\", \"status\": 200, \"item\": 9, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.195, \"operation\": \"inventory\", \"status\": 200, \"item\": 8, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.278571, \"operation\": \"write\", \"status\": 200, \"item\": 9, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 1.362143, \"operation\": \"inventory\", \"status\": 200, \"item\": 16, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.445714, \"operation\": \"inventory\", \"status\": 200, \"item\": 13, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.529286, \"operation\": \"inventory\", \"status\": 200, \"item\": 1, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.612857, \"operation\": \"write\", \"status\": 200, \"item\": 13, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 1.696429, \"operation\": \"write\", \"status\": 200, \"item\": 1, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 1.78, \"operation\": \"inventory\", \"status\": 200, \"item\": 11, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.863571, \"operation\": \"inventory\", \"status\": 200, \"item\": 18, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 1.947143, \"operation\": \"write\", \"status\": 200, \"item\": 11, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 2.030714, \"operation\": \"write\", \"status\": 200, \"item\": 18, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 2.114286, \"operation\": \"inventory\", \"status\": 200, \"item\": 7, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 2.197857, \"operation\": \"inventory\", \"status\": 200, \"item\": 10, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 2.281429, \"operation\": \"inventory\", \"status\": 200, \"item\": 12, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 2.365, \"operation\": \"write\", \"status\": 200, \"item\": 7, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 2.448571, \"operation\": \"write\", \"status\": 200, \"item\": 10, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 2.532143, \"operation\": \"write\", \"status\": 200, \"item\": 12, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 2.615714, \"operation\": \"inventory\", \"status\": 200, \"item\": 3, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 2.699286, \"operation\": \"write\", \"status\": 200, \"item\": 16, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 2.782857, \"operation\": \"inventory\", \"status\": 200, \"item\": 2, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 2.866429, \"operation\": \"write\", \"status\": 200, \"item\": 8, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 2.95, \"operation\": \"inventory\", \"status\": 200, \"item\": 6, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 3.033571, \"operation\": \"write\", \"status\": 200, \"item\": 17, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 3.117143, \"operation\": \"inventory\", \"status\": 200, \"item\": 4, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 3.200714, \"operation\": \"inventory\", \"status\": 200, \"item\": 5, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 3.284286, \"operation\": \"write\", \"status\": 200, \"item\": 3, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 3.367857, \"operation\": \"inventory\", \"status\": 200, \"item\": 14, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 3.451429, \"operation\": \"write\", \"status\": 200, \"item\": 5, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 3.535, \"operation\": \"write\", \"status\": 200, \"item\": 6, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 3.618571, \"operation\": \"write\", \"status\": 200, \"item\": 2, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 3.702143, \"operation\": \"write\", \"status\": 200, \"item\": 14, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 3.785714, \"operation\": \"inventory\", \"status\": 200, \"item\": 15, \"tenant\": null, \"snapshot\": null, \"keys\": null}, {\"t\": 3.869286, \"operation\": \"write\", \"status\": 200, \"item\": 4, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}, {\"t\": 3.952857, \"operation\": \"write\", \"status\": 200, \"item\": 15, \"tenant\": null, \"snapshot\": null, \"keys\": null, \"deduplicated\": false}], \"outputs\": [{\"id\": 0, \"tenant\": 0, \"snapshot\": \"v0\", \"category_label\": \"0:v0:category-0:34\", \"converted_cents\": 9311, \"stock\": 41}, {\"id\": 1, \"tenant\": 1, \"snapshot\": \"v0\", \"category_label\": \"1:v0:category-0:34\", \"converted_cents\": 9794, \"stock\": 48}, {\"id\": 2, \"tenant\": 2, \"snapshot\": \"v0\", \"category_label\": \"2:v0:category-0:34\", \"converted_cents\": 10288, \"stock\": 55}, {\"id\": 3, \"tenant\": 3, \"snapshot\": \"v0\", \"category_label\": \"3:v0:category-0:34\", \"converted_cents\": 1335, \"stock\": 62}, {\"id\": 4, \"tenant\": 0, \"snapshot\": \"v0\", \"category_label\": \"0:v0:category-0:34\", \"converted_cents\": 1594, \"stock\": 69}, {\"id\": 5, \"tenant\": 1, \"snapshot\": \"v0\", \"category_label\": \"1:v0:category-0:34\", \"converted_cents\": 1945, \"stock\": 76}, {\"id\": 6, \"tenant\": 2, \"snapshot\": \"v0\", \"category_label\": \"2:v0:category-0:34\", \"converted_cents\": 2308, \"stock\": 83}, {\"id\": 7, \"tenant\": 3, \"snapshot\": \"v0\", \"category_label\": \"3:v0:category-0:34\", \"converted_cents\": 2681, \"stock\": 90}, {\"id\": 8, \"tenant\": 0, \"snapshot\": \"v0\", \"category_label\": \"0:v0:category-0:34\", \"converted_cents\": 2883, \"stock\": 97}, {\"id\": 9, \"tenant\": 1, \"snapshot\": \"v0\", \"category_label\": \"1:v0:category-0:34\", \"converted_cents\": 3258, \"stock\": 3}, {\"id\": 10, \"tenant\": 2, \"snapshot\": \"v0\", \"category_label\": \"2:v0:category-0:34\", \"converted_cents\": 3644, \"stock\": 10}, {\"id\": 11, \"tenant\": 3, \"snapshot\": \"v0\", \"category_label\": \"3:v0:category-0:34\", \"converted_cents\": 4040, \"stock\": 17}, {\"id\": 12, \"tenant\": 0, \"snapshot\": \"v0\", \"category_label\": \"0:v0:category-0:34\", \"converted_cents\": 4119, \"stock\": 24}, {\"id\": 13, \"tenant\": 1, \"snapshot\": \"v0\", \"category_label\": \"1:v0:category-0:34\", \"converted_cents\": 4513, \"stock\": 31}, {\"id\": 14, \"tenant\": 2, \"snapshot\": \"v0\", \"category_label\": \"2:v0:category-0:34\", \"converted_cents\": 4917, \"stock\": 38}, {\"id\": 15, \"tenant\": 3, \"snapshot\": \"v0\", \"category_label\": \"3:v0:category-0:34\", \"converted_cents\": 5333, \"stock\": 45}, {\"id\": 16, \"tenant\": 0, \"snapshot\": \"v0\", \"category_label\": \"0:v0:category-0:34\", \"converted_cents\": 5415, \"stock\": 52}, {\"id\": 17, \"tenant\": 1, \"snapshot\": \"v0\", \"category_label\": \"1:v0:category-0:34\", \"converted_cents\": 5832, \"stock\": 59}, {\"id\": 18, \"tenant\": 2, \"snapshot\": \"v0\", \"category_label\": \"2:v0:category-0:34\", \"converted_cents\": 6260, \"stock\": 66}, {\"id\": 19, \"tenant\": 3, \"snapshot\": \"v0\", \"category_label\": \"3:v0:category-0:34\", \"converted_cents\": 6699, \"stock\": 73}], \"job_completion_seconds\": {\"0\": 0.10940571428571426, \"19\": 0.1344342857142857, \"9\": 0.17454857142857141, \"13\": 0.19966285714285711, \"1\": 0.20969142857142853, \"11\": 0.23977714285714283, \"18\": 0.24980571428571424, \"7\": 0.28991999999999996, \"10\": 0.2999485714285714, \"12\": 0.30997714285714284, \"16\": 0.33003428571428567, \"8\": 0.35009142857142855, \"17\": 0.3701485714285714, \"3\": 0.40023428571428565, \"6\": 0.43032, \"5\": 0.4352914285714285, \"2\": 0.44034857142857137, \"14\": 0.4503771428571428, \"4\": 0.47043428571428564, \"15\": 0.480462857142857}, \"server_errors\": [], \"clock\": \"virtual\", \"wall_seconds\": 0.007930084015242755}}\n",
+    "stderr": ""
+  },
+  "result": {
+    "correct": true,
+    "jobs": 20,
+    "acknowledged": 20,
+    "requests": 56,
+    "requests_by_operation": {
+      "category": 4,
+      "fx": 12,
+      "inventory": 20,
+      "write": 20
+    },
+    "duplicate_side_effects": 0,
+    "invalid_outputs": 0,
+    "outputs_match": true,
+    "output_sha256": "a61844d42c561b703bb9b326e5eb1c83267a13b450a72d56f9900c7c982461d2",
+    "expected_sha256": "a61844d42c561b703bb9b326e5eb1c83267a13b450a72d56f9900c7c982461d2",
+    "completion_seconds": 0.480462857142857,
+    "rate_limit_responses": 0,
+    "transient_responses": 0,
+    "peak_inflight": 5,
+    "deadline_exceeded": false,
+    "events": [
+      {
+        "t": 0.0,
+        "operation": "category",
+        "status": 200,
+        "item": null,
+        "tenant": 0,
+        "snapshot": "v0",
+        "keys": [
+          "category-0"
+        ]
+      },
+      {
+        "t": 0.0,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 0,
+        "snapshot": "v0",
+        "keys": [
+          "currency-0"
+        ]
+      },
+      {
+        "t": 0.0,
+        "operation": "category",
+        "status": 200,
+        "item": null,
+        "tenant": 1,
+        "snapshot": "v0",
+        "keys": [
+          "category-0"
+        ]
+      },
+      {
+        "t": 0.0,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 1,
+        "snapshot": "v0",
+        "keys": [
+          "currency-0"
+        ]
+      },
+      {
+        "t": 0.0,
+        "operation": "category",
+        "status": 200,
+        "item": null,
+        "tenant": 2,
+        "snapshot": "v0",
+        "keys": [
+          "category-0"
+        ]
+      },
+      {
+        "t": 0.051,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 1,
+        "snapshot": "v0",
+        "keys": [
+          "currency-1"
+        ]
+      },
+      {
+        "t": 0.051,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 0,
+        "snapshot": "v0",
+        "keys": [
+          "currency-1"
+        ]
+      },
+      {
+        "t": 0.07,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 3,
+        "snapshot": "v0",
+        "keys": [
+          "currency-0"
+        ]
+      },
+      {
+        "t": 0.07,
+        "operation": "category",
+        "status": 200,
+        "item": null,
+        "tenant": 3,
+        "snapshot": "v0",
+        "keys": [
+          "category-0"
+        ]
+      },
+      {
+        "t": 0.102,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 1,
+        "snapshot": "v0",
+        "keys": [
+          "currency-2"
+        ]
+      },
+      {
+        "t": 0.192143,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 0,
+        "snapshot": "v0",
+        "keys": [
+          "currency-2"
+        ]
+      },
+      {
+        "t": 0.275714,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 2,
+        "snapshot": "v0",
+        "keys": [
+          "currency-0"
+        ]
+      },
+      {
+        "t": 0.359286,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 3,
+        "snapshot": "v0",
+        "keys": [
+          "currency-1"
+        ]
+      },
+      {
+        "t": 0.442857,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 2,
+        "snapshot": "v0",
+        "keys": [
+          "currency-1"
+        ]
+      },
+      {
+        "t": 0.526429,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 3,
+        "snapshot": "v0",
+        "keys": [
+          "currency-2"
+        ]
+      },
+      {
+        "t": 0.61,
+        "operation": "fx",
+        "status": 200,
+        "item": null,
+        "tenant": 2,
+        "snapshot": "v0",
+        "keys": [
+          "currency-2"
+        ]
+      },
+      {
+        "t": 0.693571,
+        "operation": "inventory",
+        "status": 200,
+        "item": 0,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 0.777143,
+        "operation": "inventory",
+        "status": 200,
+        "item": 19,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 0.860714,
+        "operation": "write",
+        "status": 200,
+        "item": 0,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 0.944286,
+        "operation": "write",
+        "status": 200,
+        "item": 19,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 1.027857,
+        "operation": "inventory",
+        "status": 200,
+        "item": 17,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.111429,
+        "operation": "inventory",
+        "status": 200,
+        "item": 9,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.195,
+        "operation": "inventory",
+        "status": 200,
+        "item": 8,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.278571,
+        "operation": "write",
+        "status": 200,
+        "item": 9,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 1.362143,
+        "operation": "inventory",
+        "status": 200,
+        "item": 16,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.445714,
+        "operation": "inventory",
+        "status": 200,
+        "item": 13,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.529286,
+        "operation": "inventory",
+        "status": 200,
+        "item": 1,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.612857,
+        "operation": "write",
+        "status": 200,
+        "item": 13,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 1.696429,
+        "operation": "write",
+        "status": 200,
+        "item": 1,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 1.78,
+        "operation": "inventory",
+        "status": 200,
+        "item": 11,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.863571,
+        "operation": "inventory",
+        "status": 200,
+        "item": 18,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 1.947143,
+        "operation": "write",
+        "status": 200,
+        "item": 11,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 2.030714,
+        "operation": "write",
+        "status": 200,
+        "item": 18,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 2.114286,
+        "operation": "inventory",
+        "status": 200,
+        "item": 7,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 2.197857,
+        "operation": "inventory",
+        "status": 200,
+        "item": 10,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 2.281429,
+        "operation": "inventory",
+        "status": 200,
+        "item": 12,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 2.365,
+        "operation": "write",
+        "status": 200,
+        "item": 7,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 2.448571,
+        "operation": "write",
+        "status": 200,
+        "item": 10,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 2.532143,
+        "operation": "write",
+        "status": 200,
+        "item": 12,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 2.615714,
+        "operation": "inventory",
+        "status": 200,
+        "item": 3,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 2.699286,
+        "operation": "write",
+        "status": 200,
+        "item": 16,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 2.782857,
+        "operation": "inventory",
+        "status": 200,
+        "item": 2,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 2.866429,
+        "operation": "write",
+        "status": 200,
+        "item": 8,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 2.95,
+        "operation": "inventory",
+        "status": 200,
+        "item": 6,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 3.033571,
+        "operation": "write",
+        "status": 200,
+        "item": 17,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 3.117143,
+        "operation": "inventory",
+        "status": 200,
+        "item": 4,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 3.200714,
+        "operation": "inventory",
+        "status": 200,
+        "item": 5,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 3.284286,
+        "operation": "write",
+        "status": 200,
+        "item": 3,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 3.367857,
+        "operation": "inventory",
+        "status": 200,
+        "item": 14,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 3.451429,
+        "operation": "write",
+        "status": 200,
+        "item": 5,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 3.535,
+        "operation": "write",
+        "status": 200,
+        "item": 6,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 3.618571,
+        "operation": "write",
+        "status": 200,
+        "item": 2,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 3.702143,
+        "operation": "write",
+        "status": 200,
+        "item": 14,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 3.785714,
+        "operation": "inventory",
+        "status": 200,
+        "item": 15,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null
+      },
+      {
+        "t": 3.869286,
+        "operation": "write",
+        "status": 200,
+        "item": 4,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      },
+      {
+        "t": 3.952857,
+        "operation": "write",
+        "status": 200,
+        "item": 15,
+        "tenant": null,
+        "snapshot": null,
+        "keys": null,
+        "deduplicated": false
+      }
+    ],
+    "outputs": [
+      {
+        "id": 0,
+        "tenant": 0,
+        "snapshot": "v0",
+        "category_label": "0:v0:category-0:34",
+        "converted_cents": 9311,
+        "stock": 41
+      },
+      {
+        "id": 1,
+        "tenant": 1,
+        "snapshot": "v0",
+        "category_label": "1:v0:category-0:34",
+        "converted_cents": 9794,
+        "stock": 48
+      },
+      {
+        "id": 2,
+        "tenant": 2,
+        "snapshot": "v0",
+        "category_label": "2:v0:category-0:34",
+        "converted_cents": 10288,
+        "stock": 55
+      },
+      {
+        "id": 3,
+        "tenant": 3,
+        "snapshot": "v0",
+        "category_label": "3:v0:category-0:34",
+        "converted_cents": 1335,
+        "stock": 62
+      },
+      {
+        "id": 4,
+        "tenant": 0,
+        "snapshot": "v0",
+        "category_label": "0:v0:category-0:34",
+        "converted_cents": 1594,
+        "stock": 69
+      },
+      {
+        "id": 5,
+        "tenant": 1,
+        "snapshot": "v0",
+        "category_label": "1:v0:category-0:34",
+        "converted_cents": 1945,
+        "stock": 76
+      },
+      {
+        "id": 6,
+        "tenant": 2,
+        "snapshot": "v0",
+        "category_label": "2:v0:category-0:34",
+        "converted_cents": 2308,
+        "stock": 83
+      },
+      {
+        "id": 7,
+        "tenant": 3,
+        "snapshot": "v0",
+        "category_label": "3:v0:category-0:34",
+        "converted_cents": 2681,
+        "stock": 90
+      },
+      {
+        "id": 8,
+        "tenant": 0,
+        "snapshot": "v0",
+        "category_label": "0:v0:category-0:34",
+        "converted_cents": 2883,
+        "stock": 97
+      },
+      {
+        "id": 9,
+        "tenant": 1,
+        "snapshot": "v0",
+        "category_label": "1:v0:category-0:34",
+        "converted_cents": 3258,
+        "stock": 3
+      },
+      {
+        "id": 10,
+        "tenant": 2,
+        "snapshot": "v0",
+        "category_label": "2:v0:category-0:34",
+        "converted_cents": 3644,
+        "stock": 10
+      },
+      {
+        "id": 11,
+        "tenant": 3,
+        "snapshot": "v0",
+        "category_label": "3:v0:category-0:34",
+        "converted_cents": 4040,
+        "stock": 17
+      },
+      {
+        "id": 12,
+        "tenant": 0,
+        "snapshot": "v0",
+        "category_label": "0:v0:category-0:34",
+        "converted_cents": 4119,
+        "stock": 24
+      },
+      {
+        "id": 13,
+        "tenant": 1,
+        "snapshot": "v0",
+        "category_label": "1:v0:category-0:34",
+        "converted_cents": 4513,
+        "stock": 31
+      },
+      {
+        "id": 14,
+        "tenant": 2,
+        "snapshot": "v0",
+        "category_label": "2:v0:category-0:34",
+        "converted_cents": 4917,
+        "stock": 38
+      },
+      {
+        "id": 15,
+        "tenant": 3,
+        "snapshot": "v0",
+        "category_label": "3:v0:category-0:34",
+        "converted_cents": 5333,
+        "stock": 45
+      },
+      {
+        "id": 16,
+        "tenant": 0,
+        "snapshot": "v0",
+        "category_label": "0:v0:category-0:34",
+        "converted_cents": 5415,
+        "stock": 52
+      },
+      {
+        "id": 17,
+        "tenant": 1,
+        "snapshot": "v0",
+        "category_label": "1:v0:category-0:34",
+        "converted_cents": 5832,
+        "stock": 59
+      },
+      {
+        "id": 18,
+        "tenant": 2,
+        "snapshot": "v0",
+        "category_label": "2:v0:category-0:34",
+        "converted_cents": 6260,
+        "stock": 66
+      },
+      {
+        "id": 19,
+        "tenant": 3,
+        "snapshot": "v0",
+        "category_label": "3:v0:category-0:34",
+        "converted_cents": 6699,
+        "stock": 73
+      }
+    ],
+    "job_completion_seconds": {
+      "0": 0.10940571428571426,
+      "19": 0.1344342857142857,
+      "9": 0.17454857142857141,
+      "13": 0.19966285714285711,
+      "1": 0.20969142857142853,
+      "11": 0.23977714285714283,
+      "18": 0.24980571428571424,
+      "7": 0.28991999999999996,
+      "10": 0.2999485714285714,
+      "12": 0.30997714285714284,
+      "16": 0.33003428571428567,
+      "8": 0.35009142857142855,
+      "17": 0.3701485714285714,
+      "3": 0.40023428571428565,
+      "6": 0.43032,
+      "5": 0.4352914285714285,
+      "2": 0.44034857142857137,
+      "14": 0.4503771428571428,
+      "4": 0.47043428571428564,
+      "15": 0.480462857142857
+    },
+    "server_errors": [],
+    "clock": "virtual",
+    "wall_seconds": 0.007930084015242755
+  }
+}
