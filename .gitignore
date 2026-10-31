@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+.venv/
+submission/
+*.mp4
+*.wav
+*.zip
+runs/launcher/
+runs/catalog/*
+!runs/catalog/20261031T191522732159Z/
