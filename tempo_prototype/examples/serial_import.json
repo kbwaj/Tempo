@@ -1,0 +1,62 @@
+{
+  "name": "Serialized importer",
+  "source": "serial_import.py",
+  "objective": "latency",
+  "max_other_metric_regression": 0.1,
+  "training": [
+    {
+      "jobs": 12,
+      "limit": 4,
+      "window": 2,
+      "service": 0.08,
+      "slow_service": 0.65,
+      "slow_every": 3,
+      "scale": 0.3,
+      "deadline": 25,
+      "name": "train_fixed",
+      "quota_mode": "fixed",
+      "seed": 3
+    },
+    {
+      "jobs": 12,
+      "limit": 4,
+      "window": 2,
+      "service": 0.08,
+      "slow_service": 0.65,
+      "slow_every": 3,
+      "scale": 0.3,
+      "deadline": 25,
+      "name": "train_token",
+      "quota_mode": "token",
+      "seed": 4
+    }
+  ],
+  "validation": [
+    {
+      "jobs": 11,
+      "limit": 3,
+      "window": 1.8,
+      "service": 0.08,
+      "slow_service": 0.8,
+      "slow_every": 3,
+      "scale": 0.3,
+      "deadline": 25,
+      "name": "validation_fixed",
+      "seed": 17,
+      "quota_mode": "fixed"
+    },
+    {
+      "jobs": 13,
+      "limit": 5,
+      "window": 2.4,
+      "service": 0.08,
+      "slow_service": 0.9,
+      "slow_every": 3,
+      "scale": 0.3,
+      "deadline": 25,
+      "name": "validation_token",
+      "seed": 29,
+      "quota_mode": "token"
+    }
+  ]
+}
